@@ -1,0 +1,102 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $lightGray;
+}
+h2 {
+  color: $lightGray;
+  font-size: 2em;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+
+p {
+  color: $transparentWhite;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375em;
+  line-height: 2em;
+
+  @include breakpoint-up(medium) {
+    margin-bottom: 5.625em;
+  }
+}
+.container {
+  margin: 5.5em 1.5em 5.5em 1.5em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  @include breakpoint-up(medium) {
+    flex-wrap: nowrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 57.5em;
+  }
+}
+
+.col {
+  &--pall {
+    padding: 3.0625em;
+  }
+}
+.col-1 {
+  background-color: $brightOrange;
+}
+
+.col-2 {
+  background-color: $darkCyan;
+}
+
+.col-3 {
+  background-color: $veryDarkCyan;
+}
+
+.button {
+  display: inline-block;
+  background-color: $lightGray;
+  padding: 1.1875em 2em 1.1875em 2em;
+  border: solid $lightGray 2px;
+  border-radius: 20em;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+  font-size: 0.85em;
+
+  &--col-1 {
+    text-decoration: none;
+    color: $brightOrange;
+  }
+
+  &--col-2 {
+    text-decoration: none;
+    color: $darkCyan;
+  }
+
+  &--col-3 {
+    text-decoration: none;
+    color: $veryDarkCyan;
+  }
+}
+
+.button:hover {
+  border: solid $lightGray 2px;
+  background-color: transparent;
+  color: $lightGray;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
