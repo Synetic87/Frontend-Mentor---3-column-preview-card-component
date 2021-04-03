@@ -40,7 +40,7 @@ Mobile version
 ### Links
 
 - Solution URL: [Code on GitHub](https://github.com/Synetic87/Frontend-Mentor---3-column-preview-card-component)
-- Live Site URL: [Live-Site](https://your-live-site-url.com)
+- Live Site URL: [Live-Site](https://stockloew.de/frontendmentor/3-column-preview-card-component/index.html)
 
 ## My process
 
